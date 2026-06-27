@@ -1,18 +1,13 @@
-# 女孩衣櫃間 Girls Closet 官網
+# 女孩衣櫃間 Girls Closet 官網 V2
 
-這是一個可用於 GitHub Pages 發布的靜態網站。
+這是女孩衣櫃間 Girls Closet 的 GitHub Pages 靜態官網檔案。
 
-## 檔案說明
+## 檔案
 
-- index.html：網站主要內容
+- index.html：網站內容
 - style.css：網站樣式
 - README.md：說明文件
 
-## 發布到 GitHub Pages
+## 更新方式
 
-1. 到 GitHub 建立一個新的 repository
-2. 將 index.html、style.css、README.md 上傳
-3. 進入 Settings → Pages
-4. Source 選擇 Deploy from a branch
-5. Branch 選 main / root
-6. 儲存後等待 GitHub 產生網站連結
+將 index.html、style.css、README.md 上傳並覆蓋 GitHub repository 內的舊檔案，按下 Commit changes 後，GitHub Pages 會自動更新網站。

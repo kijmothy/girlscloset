@@ -89,21 +89,21 @@ a {
 }
 
 .hero {
-  min-height: 720px;
+  min-height: 730px;
   display: flex;
   align-items: center;
   background:
-    radial-gradient(circle at 86% 18%, rgba(238, 193, 205, 0.75), transparent 32%),
+    radial-gradient(circle at 82% 18%, rgba(238, 193, 205, 0.72), transparent 32%),
     radial-gradient(circle at 12% 82%, rgba(245, 226, 216, 0.9), transparent 36%),
     linear-gradient(105deg, #fffaf7 0%, #fff2ed 52%, #fbe4ea 100%);
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.8fr;
+  grid-template-columns: 1.1fr 0.78fr;
   align-items: center;
   gap: 58px;
-  padding: 92px 0;
+  padding: 94px 0;
 }
 
 .eyebrow,
@@ -124,7 +124,7 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(42px, 6vw, 72px);
+  font-size: clamp(42px, 6vw, 74px);
   margin-bottom: 24px;
   letter-spacing: 0.02em;
 }
@@ -184,22 +184,31 @@ h3 {
   background: rgba(255,255,255,0.65);
 }
 
-.hero-logo-card {
+.hero-card {
   justify-self: center;
   width: min(360px, 100%);
-  aspect-ratio: 1;
-  padding: 18px;
+  padding: 18px 18px 24px;
   border-radius: 34px;
+  text-align: center;
   background: rgba(255, 255, 255, 0.72);
   box-shadow: 0 30px 80px rgba(128, 70, 82, 0.16);
   border: 1px solid rgba(232, 194, 205, 0.75);
 }
 
-.hero-logo-card img {
+.hero-card img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1;
   border-radius: 24px;
   object-fit: cover;
+}
+
+.hero-card p {
+  margin: 18px 0 0;
+  color: #9b6b60;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
 }
 
 .section {
@@ -222,68 +231,107 @@ h3 {
   color: #5f4e48;
 }
 
+.section-head {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 40px;
+  align-items: end;
+}
+
 .brand-grid,
 .feature-grid,
 .cards.two,
-.product-grid {
+.product-grid,
+.announcement-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 22px;
 }
 
+.brand-grid,
+.product-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.feature-grid,
 .cards.two,
-.feature-grid {
+.announcement-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.brand-grid article,
+.announcement-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.brand-card,
 .feature-card,
 .card,
 .notice-box,
 .policy-box,
 .contact-card,
 details,
-.product-card {
+.product-card,
+.announcement-grid article {
   background: #fff;
   border: 1px solid #eadbd3;
   border-radius: 24px;
   box-shadow: 0 14px 34px rgba(87, 60, 50, 0.06);
 }
 
-.brand-grid article,
+.brand-card,
 .feature-card,
-.card {
+.card,
+.announcement-grid article {
   padding: 28px;
 }
 
-.brand-grid h3 {
-  font-size: 22px;
+.brand-card,
+.feature-card,
+.card,
+.product-card,
+.announcement-grid article {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.brand-card:hover,
+.feature-card:hover,
+.card:hover,
+.product-card:hover,
+.announcement-grid article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(87, 60, 50, 0.09);
+}
+
+.brand-card span,
+.feature-card span,
+.announcement-grid span {
+  display: inline-block;
+  color: #b87b70;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.brand-card h3 {
+  font-size: 24px;
   letter-spacing: 0.04em;
 }
 
-.brand-grid p,
+.brand-card p,
 .feature-card p,
-.card p {
+.card p,
+.announcement-grid p {
   margin-bottom: 0;
   color: #66534d;
 }
 
 .product-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
   margin-top: 30px;
 }
 
 .product-card {
   overflow: hidden;
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-
-.product-card:hover,
-.feature-card:hover,
-.card:hover,
-.brand-grid article:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 40px rgba(87, 60, 50, 0.09);
 }
 
 .product-image {
@@ -298,27 +346,28 @@ details,
   letter-spacing: 0.12em;
 }
 
-.product-content {
+.product-info {
   padding: 22px;
 }
 
-.tag {
+.product-brand {
   display: inline-flex;
-  font-size: 12px;
   color: #9a604f;
   background: #fff1ec;
   border: 1px solid #efd2c9;
   border-radius: 999px;
   padding: 3px 10px;
   margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 800;
 }
 
-.price {
+.product-price {
   font-weight: 900;
   color: #9a604f;
 }
 
-.meta {
+.product-meta {
   color: #7a625a;
   font-size: 14px;
 }
@@ -338,14 +387,6 @@ details,
 
 .line-button:hover {
   background: #835143;
-}
-
-.feature-card span {
-  display: inline-block;
-  color: #b87b70;
-  font-weight: 900;
-  letter-spacing: 0.16em;
-  margin-bottom: 12px;
 }
 
 .notice-box {
@@ -446,6 +487,35 @@ details p {
   font-weight: 800;
 }
 
+.social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.social-row a,
+.footer-social a,
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  color: #9a604f;
+  background: #fff1ec;
+  border: 1px solid #efd2c9;
+  font-weight: 800;
+}
+
+.social-row a:hover,
+.footer-social a:hover,
+.footer-links a:hover {
+  background: #9a604f;
+  color: #fff;
+}
+
 .floating-line,
 .back-top {
   position: fixed;
@@ -478,9 +548,35 @@ details p {
 
 .site-footer {
   border-top: 1px solid #eadbd3;
-  padding: 30px 0;
-  text-align: center;
+  padding: 48px 0 26px;
+  background: #fffaf7;
   color: #876d64;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.2fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.footer-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.footer-links,
+.footer-social {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  text-align: center;
+  margin: 34px 0 0;
   font-size: 14px;
 }
 
@@ -488,6 +584,10 @@ details p {
   .product-grid,
   .brand-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .announcement-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -505,9 +605,11 @@ details p {
 
   .hero-grid,
   .split,
+  .section-head,
   .feature-grid,
   .cards.two,
-  .timeline {
+  .timeline,
+  .footer-grid {
     grid-template-columns: 1fr;
   }
 
@@ -519,7 +621,7 @@ details p {
     padding: 72px 0;
   }
 
-  .hero-logo-card {
+  .hero-card {
     width: min(320px, 88%);
   }
 

@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="">
+<body>
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="女孩衣櫃間 Girls Closet">
@@ -108,16 +108,15 @@
           </div>
         </div>
 
-        <div class="product-grid">
-          <article class="product-card"><div class="product-image placeholder">KUOSE</div><div class="product-info"><span class="product-brand">KUOSE</span><h3>法式學院風洋裝</h3><p class="product-price">NT$ 請洽客服</p><p>溫柔學院感設計，適合日常、約會與輕正式場合。</p><p class="product-meta">尺寸：S / M / L｜顏色：依品牌供應</p><a class="line-button" href="https://line.me/ti/p/Fj1bSn35pG" target="_blank" rel="noopener">LINE 詢問代購</a></div></article>
-          <article class="product-card"><div class="product-image placeholder">KUOSE</div><div class="product-info"><span class="product-brand">KUOSE</span><h3>質感日常上衣</h3><p class="product-price">NT$ 請洽客服</p><p>簡約好搭的日常單品，可搭配裙裝或褲裝。</p><p class="product-meta">尺寸：S / M / L｜顏色：依品牌供應</p><a class="line-button" href="https://line.me/ti/p/Fj1bSn35pG" target="_blank" rel="noopener">LINE 詢問代購</a></div></article>
-          <article class="product-card"><div class="product-image placeholder">KUOSE</div><div class="product-info"><span class="product-brand">KUOSE</span><h3>百搭半身裙</h3><p class="product-price">NT$ 請洽客服</p><p>修飾身形、耐看百搭，適合日常與通勤穿搭。</p><p class="product-meta">尺寸：S / M / L｜顏色：依品牌供應</p><a class="line-button" href="https://line.me/ti/p/Fj1bSn35pG" target="_blank" rel="noopener">LINE 詢問代購</a></div></article>
-          <article class="product-card"><div class="product-image placeholder">MISHOW</div><div class="product-info"><span class="product-brand">MISHOW</span><h3>通勤感上衣</h3><p class="product-price">NT$ 請洽客服</p><p>簡約知性風格，適合上班、日常與約會穿搭。</p><p class="product-meta">尺寸：S / M / L｜顏色：依品牌供應</p><a class="line-button" href="https://line.me/ti/p/Fj1bSn35pG" target="_blank" rel="noopener">LINE 詢問代購</a></div></article>
-          <article class="product-card"><div class="product-image placeholder">MISHOW</div><div class="product-info"><span class="product-brand">MISHOW</span><h3>俐落剪裁外套</h3><p class="product-price">NT$ 請洽客服</p><p>乾淨俐落的版型，適合通勤與日常搭配。</p><p class="product-meta">尺寸：S / M / L｜顏色：依品牌供應</p><a class="line-button" href="https://line.me/ti/p/Fj1bSn35pG" target="_blank" rel="noopener">LINE 詢問代購</a></div></article>
-          <article class="product-card"><div class="product-image placeholder">SNIDEL</div><div class="product-info"><span class="product-brand">SNIDEL</span><h3>優雅設計洋裝</h3><p class="product-price">NT$ 請洽客服</p><p>日系甜美與優雅設計感，適合重要場合穿搭。</p><p class="product-meta">尺寸：依品牌供應｜顏色：依品牌供應</p><a class="line-button" href="https://line.me/ti/p/Fj1bSn35pG" target="_blank" rel="noopener">LINE 詢問代購</a></div></article>
-          <article class="product-card"><div class="product-image placeholder">Fi.n.t</div><div class="product-info"><span class="product-brand">Fi.n.t</span><h3>復古文青上衣</h3><p class="product-price">NT$ 請洽客服</p><p>帶有復古細節的日系單品，適合喜歡文青風格的女孩。</p><p class="product-meta">尺寸：依品牌供應｜顏色：依品牌供應</p><a class="line-button" href="https://line.me/ti/p/Fj1bSn35pG" target="_blank" rel="noopener">LINE 詢問代購</a></div></article>
-          <article class="product-card"><div class="product-image placeholder">Fi.n.t</div><div class="product-info"><span class="product-brand">Fi.n.t</span><h3>經典日系半身裙</h3><p class="product-price">NT$ 請洽客服</p><p>復古而耐看的日系裙裝，適合搭配襯衫與針織衫。</p><p class="product-meta">尺寸：依品牌供應｜顏色：依品牌供應</p><a class="line-button" href="https://line.me/ti/p/Fj1bSn35pG" target="_blank" rel="noopener">LINE 詢問代購</a></div></article>
+        <div class="filter-row" aria-label="商品篩選">
+          <button class="filter-button active" data-filter="all">全部</button>
+          <button class="filter-button" data-filter="KUOSE">KUOSE</button>
+          <button class="filter-button" data-filter="MISHOW">MISHOW</button>
+          <button class="filter-button" data-filter="SNIDEL">SNIDEL</button>
+          <button class="filter-button" data-filter="Fi.n.t">Fi.n.t</button>
         </div>
+
+        <div id="productGrid" class="product-grid"></div>
       </div>
     </section>
 
@@ -232,5 +231,7 @@
     <p class="copyright">© 2026 女孩衣櫃間 Girls Closet. All rights reserved.</p>
   </footer>
 
+<script src="products.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

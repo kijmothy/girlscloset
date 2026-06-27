@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>常見問題 FAQ｜女孩衣櫃間 Girls Closet</title>
-  <meta name="description" content="女孩衣櫃間 Girls Closet 常見問題，包含到貨時間、正品保證、斷貨退款、取消訂單與退換貨說明。" />
-  <meta property="og:title" content="常見問題 FAQ｜女孩衣櫃間 Girls Closet" />
-  <meta property="og:description" content="女孩衣櫃間 Girls Closet 常見問題，包含到貨時間、正品保證、斷貨退款、取消訂單與退換貨說明。" />
+  <title>商品詳細｜女孩衣櫃間 Girls Closet</title>
+  <meta name="description" content="女孩衣櫃間 Girls Closet 商品詳細頁，提供商品資訊、尺寸、顏色與 LINE 詢問代購。" />
+  <meta property="og:title" content="商品詳細｜女孩衣櫃間 Girls Closet" />
+  <meta property="og:description" content="女孩衣櫃間 Girls Closet 商品詳細頁，提供商品資訊、尺寸、顏色與 LINE 詢問代購。" />
   <meta property="og:image" content="logo.png" />
   <meta property="og:type" content="website" />
 
@@ -39,23 +39,34 @@
 
   <main id="top">
 
-    <section class="page-hero">
+    <section class="page-hero product-page-hero">
       <div class="container narrow">
-        <p class="section-label">FAQ</p>
-        <h1>常見問題</h1>
-        <p>以下整理下單前常見問題，如有其他疑問，歡迎聯繫客服。</p>
+        <p class="section-label" id="productBrandLabel">Product</p>
+        <h1 id="productTitle">商品資訊</h1>
+        <p id="productIntro">商品資料載入中。</p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container narrow">
-        <details open><summary>Q1：商品多久可以收到？</summary><p>一般商品約需 7–21 個工作天（不含例假日）。實際到貨時間可能因品牌出貨進度、國際物流、海關作業或其他不可抗力因素而有所調整。</p></details>
-        <details><summary>Q2：商品都是正品嗎？</summary><p>是的。本賣場所有商品皆由海外官方網站、官方門市或合法授權通路採購，保證販售正品，請安心選購。</p></details>
-        <details><summary>Q3：如果商品遇到斷貨怎麼辦？</summary><p>若商品遇品牌斷貨、缺貨、停產或其他無法採購之情形，本賣場將主動通知您，並辦理全額退款。</p></details>
-        <details><summary>Q4：可以取消訂單嗎？</summary><p>商品下單並完成付款後，即進入採購流程，原則上無法取消訂單，亦無法修改商品款式、尺寸、顏色或其他訂單內容。下單前如有任何疑問，歡迎先與客服確認。</p></details>
-        <details><summary>Q5：可以退換貨嗎？</summary><p>若收到商品有寄錯商品、重大瑕疵或運送過程造成明顯損壞等情形，請於收到商品後 2 日內聯繫客服並提供相關照片，本賣場將協助辦理退換貨事宜。</p></details>
-        <details><summary>Q6：如何聯繫客服？</summary><p>可透過 LINE 客服連結或 Email：kijmothy@gmail.com 聯繫客服。客服時間為週一至週五 10:00–18:00（國定假日除外）。</p></details>
-        <details><summary>Q7：可以協助挑選尺寸嗎？</summary><p>可以。下單前歡迎提供您的身高、體重及平時穿著尺寸，我們將依商品版型及品牌尺寸表提供尺寸建議，但因每個人的身形及穿著習慣不同，尺寸建議僅供參考。</p></details>
+      <div class="container product-detail-grid">
+        <div class="product-detail-image" id="productImageBox"></div>
+        <div class="product-detail-info">
+          <span class="product-brand" id="productBrand"></span>
+          <h2 id="productName"></h2>
+          <p class="product-price" id="productPrice"></p>
+          <p id="productDescription"></p>
+
+          <div class="detail-list">
+            <p><strong>尺寸：</strong><span id="productSize"></span></p>
+            <p><strong>顏色：</strong><span id="productColor"></span></p>
+            <p><strong>材質：</strong><span id="productMaterial"></span></p>
+            <p><strong>到貨時間：</strong>約 7–21 個工作天，不含例假日。</p>
+            <p><strong>商品來源：</strong>依訂單向品牌官方網站、官方門市或合法授權通路採購。</p>
+          </div>
+
+          <a id="productLineButton" class="button primary product-detail-line" href="https://line.me/ti/p/Fj1bSn35pG" target="_blank" rel="noopener">LINE 詢問代購</a>
+          <p class="mini-note">※ 實際價格、尺寸、顏色與庫存狀況，以下單前客服確認為準。</p>
+        </div>
       </div>
     </section>
 
@@ -86,6 +97,7 @@
     <p class="copyright">© 2026 女孩衣櫃間 Girls Closet. All rights reserved.</p>
   </footer>
 
-
+<script src="products.js"></script>
+<script src="product.js"></script>
 </body>
 </html>

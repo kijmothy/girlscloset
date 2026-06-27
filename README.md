@@ -1,4 +1,4 @@
-# 女孩衣櫃間 Girls Closet 官網 V2 正式版
+# 女孩衣櫃間 Girls Closet 官網最終版
 
 這是女孩衣櫃間 Girls Closet 的 GitHub Pages 靜態官網檔案。
 

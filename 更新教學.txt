@@ -1,18 +1,20 @@
-Girls Closet 官網更新教學 v1.1
+Girls Closet v2.0 更新教學
 
-一、替換商品圖片
-把圖片放進 images/products/ 對應品牌資料夾。
+一、修改商品
+在 index.html 搜尋 product-card，修改商品名稱、價格、尺寸、介紹。
+
+二、替換商品圖片
+把圖片放到 images/products/品牌資料夾。
 例如：images/products/kuose/kuose01.jpg
+然後把 product-image 內的文字替換成圖片：
+<img src="images/products/kuose/kuose01.jpg" alt="商品名稱">
 
-二、修改商品卡
-在 index.html 搜尋 product-card，找到對應商品後修改：
-- 商品名稱
-- 價格
-- 尺寸
-- 簡介
+三、修改公告
+在 index.html 搜尋「最新公告」或 announcement，修改三個公告卡片。
 
-三、修正 LINE 連結
-如果之後有 LINE 官方帳號連結，可以把 href="#contact" 改成正式 LINE 網址。
+四、LINE 連結
+目前全站 LINE 連結為：
+https://line.me/ti/p/Fj1bSn35pG
 
-四、上傳 GitHub
-改好後到 GitHub → Add file → Upload files → Commit changes。
+五、上傳 GitHub
+修改後上傳所有更新檔案到 GitHub，按 Commit changes。

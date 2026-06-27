@@ -1,20 +1,29 @@
-# Girls Closet Official Website v1.1
+# Girls Closet v2.0 Commercial Edition
 
-這是女孩衣櫃間 Girls Closet 官方網站 v1.1 修正版。
+女孩衣櫃間 Girls Closet 官方網站 v2.0 商業版。
 
-## 修正內容
+## 本版更新
 
-- 修正首頁 Logo 過大與跑版問題
-- 修正 Header Logo 比例
-- Footer 改為文字版，更乾淨
-- 保留 IG、Threads、Email、LINE 聯絡方式
-- 保留商品展示、公告、購物須知、FAQ、服務條款、退貨政策與隱私權政策
+- 首頁更精簡
+- 購物須知、FAQ、服務條款、退貨政策、隱私權政策拆成獨立頁面
+- LINE 全站連結已改為可點擊連結
+- Hero Logo 再縮小，手機版同步優化
+- Footer 改為正式品牌網站結構
+- 保留商品展示與未來圖片資料夾
 
-## 更新方式
+## 檔案
 
-1. 解壓縮 ZIP。
-2. 到 GitHub repository：girlscloset。
-3. 點 Add file → Upload files。
-4. 上傳並覆蓋 index.html、style.css、logo.png、README.md。
-5. 按 Commit changes。
-6. 等待 1–3 分鐘後強制重新整理網站。
+- index.html
+- shopping-notice.html
+- faq.html
+- terms.html
+- return-policy.html
+- privacy.html
+- style.css
+- logo.png
+- images/products/
+- 更新教學.txt
+
+## 上傳方式
+
+將所有檔案與 images 資料夾一起上傳到 GitHub repository，覆蓋舊檔後 Commit changes。

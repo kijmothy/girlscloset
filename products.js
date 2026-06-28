@@ -41,6 +41,67 @@ const products = [
     soldout: false
   },
   {
+    id: "kuose-dress-001",
+    brand: "KUOSE",
+    name: "度假氣質洋裝",
+    price: "NT$3250 請洽客服",
+    size: "S / M / L",
+    color: "黃色",
+    material: "依品牌標示為準",
+    description: "優雅剪裁搭配簡約設計，度假、約會聚餐都適合。",
+    image: "images/kuose/kuose-dress-004.jpg",
+    badge: "NEW",
+    soldout: false
+  },{
+    id: "kuose-dress-001",
+    brand: "KUOSE",
+    name: "立體扭結花邊襯衫",
+    price: "NT$2166 請洽客服",
+    size: "S / M / L",
+    color: "白色",
+    material: "依品牌標示為準",
+    description: "背部扭結設計特色，舒適穿著，日常及層次搭配。",
+    image: "images/kuose/kuose-dress-005.jpg",
+    badge: "NEW",
+    soldout: false
+  },{
+    id: "kuose-dress-001",
+    brand: "KUOSE",
+    name: "藍色格子襯衫",
+    price: "NT$1720 請洽客服",
+    size: "S / M / L",
+    color: "藍色",
+    material: "依品牌標示為準",
+    description: "藍色格紋經典款，適合日常、約會與輕正式場合。",
+    image: "images/kuose/kuose-dress-006.jpg",
+    badge: "NEW",
+    soldout: false
+  },{
+    id: "kuose-dress-001",
+    brand: "KUOSE",
+    name: "花朵鏤空上衣",
+    price: "NT$1243 請洽客服",
+    size: "S / M / L",
+    color: "黑色",
+    material: "依品牌標示為準",
+    description: "花朵鏤空設計和簡約兼具，經典復古元素流行風格。",
+    image: "images/kuose/kuose-dress-007.jpg",
+    badge: "NEW",
+    soldout: false
+  },{
+    id: "kuose-dress-001",
+    brand: "KUOSE",
+    name: "V領泡袖連衣裙",
+    price: "NT$2676 請洽客服",
+    size: "S / M / L",
+    color: "藏藍色",
+    material: "依品牌標示為準",
+    description: "經典復古元素結合現代剪裁，打造耐看又顯瘦的風格。",
+    image: "images/kuose/kuose-dress-008.jpg",
+    badge: "NEW",
+    soldout: false
+  },
+  {
     id: "mishow-top-001",
     brand: "MISHOW",
     name: "通勤感上衣",
@@ -67,6 +128,45 @@ const products = [
     soldout: false
   },
   {
+    id: "mishow-top-001",
+    brand: "MISHOW",
+    name: "上衣和裙子套裝",
+    price: "NT$1753 請洽客服",
+    size: "S / M / L",
+    color: "淺綠色",
+    material: "依品牌標示為準",
+    description: "自然垂墜的設計，展現溫柔氣質，適合約會與日常穿搭。",
+    image: "images/mishow/mishow-dress-003.jpg",
+    badge: "NEW",
+    soldout: false
+  },
+  {
+    id: "mishow-top-001",
+    brand: "MISHOW",
+    name: "藍色女式襯衫",
+    price: "NT$1233 請洽客服",
+    size: "S / M / L",
+    color: "藍色",
+    material: "依品牌標示為準",
+    description: "簡約知性風格，適合上班、日常與約會穿搭。",
+    image: "images/mishow/mishow-dress-004.jpg",
+    badge: "NEW",
+    soldout: false
+  },
+  {
+    id: "snidel-dress-001",
+    brand: "SNIDEL",
+    name: "海軍風短褲",
+    price: "NT$2590 請洽客服",
+    size: "0 / 1",
+    color: "黑色 白色",
+    material: "依品牌標示為準",
+    description: "簡約俐落的設計，搭配襯衫、針織或 T 恤都十分合適。",
+    image: "images/snidel/snidel-dress-001.jpg",
+    badge: "NEW",
+    soldout: false
+  },
+  {
     id: "snidel-dress-001",
     brand: "SNIDEL",
     name: "優雅設計洋裝",
@@ -75,7 +175,31 @@ const products = [
     color: "藍色",
     material: "依品牌標示為準",
     description: "日系甜美與優雅設計感，適合重要場合穿搭。",
-    image: "images/snidel/snidel-dress-001.jpg",
+    image: "images/snidel/snidel-dress-002.jpg",
+    badge: "NEW",
+    soldout: false
+  },{
+    id: "snidel-dress-001",
+    brand: "SNIDEL",
+    name: "露肩抓皺連身裙",
+    price: "NT$4900 請洽客服",
+    size: "0 / 1",
+    color: "白色",
+    material: "依品牌標示為準",
+    description: "將人氣露肩設計以更具本季感的豐盈輪廓重新演繹。",
+    image: "images/snidel/snidel-dress-003.jpg",
+    badge: "NEW",
+    soldout: false
+  },{
+    id: "snidel-dress-001",
+    brand: "SNIDEL",
+    name: "蕾絲滾邊緞面細肩帶上衣",
+    price: "NT$3190 請洽客服",
+    size: "0 / 1",
+    color: "黃色",
+    material: "依品牌標示為準",
+    description: "以具有流行感的內衣風設計打造的緞面細肩帶上衣登場。",
+    image: "images/snidel/snidel-dress-004.jpg",
     badge: "NEW",
     soldout: false
   },
@@ -97,11 +221,39 @@ const products = [
     brand: "Fi.n.t",
     name: "經典日系半身裙",
     price: "NT$2340 請洽客服",
-    size: "依品牌供應",
-    color: "紫色 灰色",
+    size: "Free",
+    color: "紫色",
     material: "依品牌標示為準",
     description: "復古而耐看的日系裙裝，適合搭配襯衫與針織衫。",
     image: "images/fint/fint-dress-002.jpg",
+    badge: "NEW",
+    soldout: false
+  }
+  ,
+  {
+    id: "fint-skirt-001",
+    brand: "Fi.n.t",
+    name: "玫瑰刺繡羅紋針織外套",
+    price: "NT$1782 請洽客服",
+    size: "Free",
+    color: "白色",
+    material: "依品牌標示為準",
+    description: "這款古典針織開衫採用了不對稱的玫瑰刺繡。",
+    image: "images/fint/fint-dress-003.jpg",
+    badge: "NEW",
+    soldout: false
+  }
+  ,
+  {
+    id: "fint-skirt-001",
+    brand: "Fi.n.t",
+    name: "玫瑰刺繡扇貝領襯衫",
+    price: "NT$1782 請洽客服",
+    size: "Free",
+    color: "杏色",
+    material: "依品牌標示為準",
+    description: "領邊結合扇貝狀的雕花刺繡，展現極具巧思的獨特感。",
+    image: "images/fint/fint-dress-004.jpg",
     badge: "NEW",
     soldout: false
   }
